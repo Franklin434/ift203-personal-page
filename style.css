@@ -24,7 +24,11 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 30px 50px;
+    opacity: 0;
     animation: fadeIn 1.5s ease-out forwards;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(20, 19, 19);
 }
 
 .header{
@@ -70,6 +74,8 @@ body{
     flex-direction: column;
     gap: 15px;
     font-family: "Montserrat", sans-serif;
+    opacity: 0;
+    animation-delay: 0.5s;
     animation: fadeIn 1.5s ease-out forwards;
 }
 
@@ -95,7 +101,7 @@ body{
     height: 200px;
     opacity: 0;
     animation: fadeIn 2.5s ease-out forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 }
 
 /* For the buttons after intro */
@@ -145,7 +151,7 @@ button a{
     height: 14vh;
     opacity: 0;
     animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 1.2s;
+    animation-delay: 1.5s;
 }
 
 .skills{
@@ -170,6 +176,9 @@ button a{
 .tech{
     line-height: 6em;
     font-family: "Montserrat", sans-serif;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation: fadeIn 1.5s ease-out forwards;
 }
 .h2-tech{
     border-left: 2px solid rgb(200, 104, 83);
@@ -179,7 +188,10 @@ button a{
 .about-tech h1{
     margin-bottom: 50px;
     font-size: 48px;
-    font-family: "Montserrat", sans-serif
+    font-family: "Montserrat", sans-serif;
+    opacity: 0;
+    animation: 1s;
+    animation: fadeIn 1.5s ease-out forwards;
 }
 .about-tech p{
     margin-bottom: 20px;
@@ -188,7 +200,10 @@ button a{
     display: flex;
     flex-direction: row;
     gap: 80px;
-    font-family: "Montserrat", sans-serif
+    font-family: "Montserrat", sans-serif;
+    opacity: 0;
+    animation-delay: 1.9;
+    animation: fadeIn 1.5s ease-out forwards;
 }
 .points span{
     color: rgb(200, 104, 83);
