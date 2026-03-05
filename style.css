@@ -421,3 +421,9 @@ button a{
         transform: translateY(0);
     }
 }
+footer{
+    text-align: center;
+    border-top: 1px solid #ff7f66;
+    padding: 60px 20px;
+    line-height: 3em;
+}
