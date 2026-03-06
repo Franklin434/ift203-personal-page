@@ -11,7 +11,13 @@
     <header class="myHeader">
         <h1 class="header">Dev_Frank</h1>
 
-        <nav class="navbar">
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navbar" id="navbar">
             <a href="index.html" class="nav-links">Home</a>
             <a href="portfolio.html" class="nav-links active">About</a>
             <a href="portfolio.html#projects" class="nav-links">Projects</a>
@@ -112,7 +118,7 @@
             </div>
             <h1 class="main-heading">
             Have a project?<br>
-            Let’s talk!
+            Let's talk!
             </h1>
             <button class="submit-btn-large">Submit</button>
         </div>
@@ -143,5 +149,20 @@
             <a href="https://www.linkedin.com/in/franklin-ukachukwu-222801352/"><img src="imgs/icons8-linkedin-50.png" alt="linkedin icon"></a>
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links').forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('open');
+                hamburger.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
